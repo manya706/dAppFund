@@ -57,6 +57,7 @@ section {
   cursor: default;
 }
 
+
 /* .myyimg {
   animation: rotate-horizontal 2s linear infinite;
 }
@@ -97,10 +98,22 @@ section {
   width: 40vw;
 }
 
+.home-img {
+  /* transform: translate(-50%, -50%); */
+  animation: rotate 5s linear infinite;
+}
 
-@keyframes unzoom {
+@keyframes rotate {
   from {
-    /* width: 50vw; */
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* @keyframes unzoom {
+  from {
     transform: scale(0.8);
   }
   to {
@@ -111,9 +124,7 @@ section {
 
 .unzoom-image {
   animation: unzoom 1s ease-in-out forwards;
-}
-
-
+} */
 
 .home-content h3 {
   font-size: 3.2rem;
@@ -184,8 +195,39 @@ span {
 }
 
 .about-img img {
-  width: 35vw;
+  margin-left: -10rem;
+  /* width: 45vw; */
 }
+
+@keyframes unzoom {
+  from {
+    width: 30vw;
+  }
+  to {
+    width: 45vw;
+  }
+}
+
+.fimg {
+  animation: unzoom 1s ease-in-out forwards;
+}
+
+/* .fimg {
+  width: 40vw;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
 .heading {
   text-align: center;
   font-size: 4.5rem;

@@ -94,11 +94,12 @@ section {
   align-items: center;
 }
 
-.home-img {
-  width: 40vw;
+.home-img img{
+  width: 30vw;
+  margin-right: -4rem;
 }
 
-.home-img {
+.home-img img{
   /* transform: translate(-50%, -50%); */
   animation: rotate 5s linear infinite;
 }
@@ -204,7 +205,7 @@ span {
     width: 30vw;
   }
   to {
-    width: 45vw;
+    width: 40vw;
   }
 }
 

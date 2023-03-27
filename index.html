@@ -46,10 +46,23 @@
             <script>
                 document.getElementById('connect-button').addEventListener('click', event=>{
                     let account;
-                    ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                    if(typeof window!= "undefined" && typeof window.ethereum != "undefined"){
+                    try{
+                        ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
                         account = accounts[0];
                         console.log(account);
                     });
+                    } catch(err){
+                        console.error(err.message);
+                    }
+                    }
+                    else{
+                    console.log("Please install MetaMask");
+                    }
+                    // ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                    //     account = accounts[0];
+                    //     console.log(account);
+                    // });
                 });
             </script>
         </div>

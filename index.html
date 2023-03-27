@@ -41,7 +41,17 @@
                 <a href="https://www.instagram.com/dappfund/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="#"><i class='bx bxl-instagram-alt'></i></a>
             </div>
-            <a href="#" class="btn">Connect Wallet</a>
+            <!-- <a href="#" class="btn">Connect Wallet</a> -->
+            <button class="btn" id="connect-button">Connect Wallet</button>
+            <script>
+                document.getElementById('connect-button').addEventListener('click', event=>{
+                    let account;
+                    ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                        account = accounts[0];
+                        console.log(account);
+                    });
+                });
+            </script>
         </div>
         <div class="home-img">
             <img  src="images/My project.png" alt="">

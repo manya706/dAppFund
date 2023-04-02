@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="login-signup.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!-- Animated Wave Background  -->
-    <div class="ocean">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login-signup.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Animated Wave Background  -->
+  <!-- <div class="ocean">
       <div class="wave"></div>
       <div class="wave"></div>
-    </div>
-    <!-- Log In Form Section -->
-    <section>
-      <div class="container" id="container">
-        <div class="form-container sign-up-container">
-          <form action="#">
-            <h1>Sign Up</h1>
-            <!-- <div class="social-container">
+    </div> -->
+  <!-- Log In Form Section -->
+  <section>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Sign Up</h1>
+          <!-- <div class="social-container">
               <a
                 href="https://Github.com/YasinDehfuli"
                 target="_blank"
@@ -37,23 +38,23 @@
                 ><i class="fab fa-google"></i
               ></a>
             </div> -->
-            <!-- <span>Or use your Email for registration</span> -->
-            <label>
-              <input type="text" placeholder="UserName" id="username" />
-            </label>
-            <label>
-              <input type="email" placeholder="Email" id="email" />
-            </label>
-            <label>
-              <input type="password" placeholder="Password" id="password" />
-            </label>
-            <button style="margin-top: 9px" id="signup1">Sign Up</button>
-          </form>
-        </div>
-        <div class="form-container sign-in-container">
-          <form action="#">
-            <h1>Sign in</h1>
-            <!-- <div class="social-container">
+          <!-- <span>Or use your Email for registration</span> -->
+          <label>
+            <input type="text" placeholder="UserName" id="username" />
+          </label>
+          <label>
+            <input type="email" placeholder="Email" id="email" />
+          </label>
+          <label>
+            <input type="password" placeholder="Password" id="password" />
+          </label>
+          <button style="margin-top: 9px" id="signup1">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <!-- <div class="social-container">
               <a
                 href="https://Github.com/YasinDehfuli"
                 target="_blank"
@@ -70,128 +71,129 @@
                 ><i class="fab fa-google"></i
               ></a>
             </div> -->
-            <!-- <span> Or sign in using E-Mail Address</span> -->
-            <label>
-              <input id="email1" type="email" placeholder="Email" />
-            </label>
-            <label>
-              <input id="password1" type="password" placeholder="Password" />
-            </label>
-            <a href="#">Forgot your password?</a>
-            <button id="login">Login</button>
-          </form>
-        </div>
-        <div class="overlay-container">
-          <div class="overlay">
-            <div class="overlay-panel overlay-left">
-              <h1>Log in</h1>
-              <p>Sign in here if you already have an account</p>
-              <button class="ghost mt-5" id="signIn">Sign In</button>
-            </div>
-            <div class="overlay-panel overlay-right">
-              <h1>Create, Account!</h1>
-              <p>Sign up if you still don't have an account ...</p>
-              <button class="ghost" id="signUp">Sign Up</button>
-            </div>
+          <!-- <span> Or sign in using E-Mail Address</span> -->
+          <label>
+            <input id="email1" type="email" placeholder="Email" />
+          </label>
+          <label>
+            <input id="password1" type="password" placeholder="Password" />
+          </label>
+          <a href="#">Forgot your password?</a>
+          <button id="login">Login</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Log in</h1>
+            <p>Sign in here if you already have an account</p>
+            <button class="ghost mt-5" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Create, Account!</h1>
+            <p>Sign up if you still don't have an account ...</p>
+            <button class="ghost" id="signUp">Sign Up</button>
           </div>
         </div>
       </div>
-    </section>
-  </body>
-    
-  <script>
-    // toggle between signup and signin(login)
-    const signUpButton = document.getElementById("signUp");
-    const signInButton = document.getElementById("signIn");
-    const container = document.getElementById("container");
+    </div>
+  </section>
+</body>
 
-    signUpButton.addEventListener("click", () =>
-      container.classList.add("right-panel-active")
-    );
+<script>
+  // toggle between signup and signin(login)
+  const signUpButton = document.getElementById("signUp");
+  const signInButton = document.getElementById("signIn");
+  const container = document.getElementById("container");
 
-    signInButton.addEventListener("click", () =>
-      container.classList.remove("right-panel-active")
-    );
-  </script>
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
-    import {
-      getDatabase,
-      set,
-      ref,
-      update,
-    } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-database.js";
-    import {
-      getAuth,
-      createUserWithEmailAndPassword,
-      signInWithEmailAndPassword,
-    } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-auth.js";
+  signUpButton.addEventListener("click", () =>
+    container.classList.add("right-panel-active")
+  );
 
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
+  signInButton.addEventListener("click", () =>
+    container.classList.remove("right-panel-active")
+  );
+</script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+  import {
+    getDatabase,
+    set,
+    ref,
+    update,
+  } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-database.js";
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+  } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-auth.js";
 
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCHidGfeotguRDBhL325kFJP1575cVcPV4",
-      authDomain: "dappfund-c4d2e.firebaseapp.com",
-      databaseURL: "https://dappfund-c4d2e-default-rtdb.firebaseio.com",
-      projectId: "dappfund-c4d2e",
-      storageBucket: "dappfund-c4d2e.appspot.com",
-      messagingSenderId: "127975712232",
-      appId: "1:127975712232:web:3a9eb4d57fc8a3918e705d",
-    };
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const database = getDatabase(app);
-    const auth = getAuth();
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCHidGfeotguRDBhL325kFJP1575cVcPV4",
+    authDomain: "dappfund-c4d2e.firebaseapp.com",
+    databaseURL: "https://dappfund-c4d2e-default-rtdb.firebaseio.com",
+    projectId: "dappfund-c4d2e",
+    storageBucket: "dappfund-c4d2e.appspot.com",
+    messagingSenderId: "127975712232",
+    appId: "1:127975712232:web:3a9eb4d57fc8a3918e705d",
+  };
 
-    signup1.addEventListener("click", (e) => {
-      e.preventDefault();
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth();
 
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      const username = document.getElementById("username").value;
+  signup1.addEventListener("click", (e) => {
+    e.preventDefault();
 
-      createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const username = document.getElementById("username").value;
 
-          set(ref(database, "user/" + user.vid), {
-            username: username,
-            email: email,
-          });
-          alert("User created!");
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          alert(errorMessage);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+
+        set(ref(database, "user/" + user.vid), {
+          username: username,
+          email: email,
         });
-    });
+        alert("User created!");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+      });
+  });
 
-    login.addEventListener("click", (e) => {
-      var email = document.getElementById("email1").value;
-      var password = document.getElementById("password1").value;
+  login.addEventListener("click", (e) => {
+    var email = document.getElementById("email1").value;
+    var password = document.getElementById("password1").value;
 
-      signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          const dt = new Date();
-          update(ref(database, "user/" + user.vid), {
-            last_login: dt,
-          });
-          alert("User logged in!");
-          // ...
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-
-          alert(errorMessage);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        const dt = new Date();
+        update(ref(database, "user/" + user.vid), {
+          last_login: dt,
         });
-    });
-  </script>
+        alert("User logged in!");
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+      });
+  });
+</script>
+
 </html>

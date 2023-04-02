@@ -164,6 +164,7 @@
           email: email,
         });
         alert("User created!");
+        window.location.assign("dashboard.html");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -185,6 +186,7 @@
           last_login: dt,
         });
         alert("User logged in!");
+        window.location.assign("dashboard.html");
         // ...
       })
       .catch((error) => {

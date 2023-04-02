@@ -30,7 +30,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 10rem 4% 2rem;
 }
 
 .header {
@@ -38,12 +38,13 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 2rem 4%;
   background: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  border-bottom: 1px solid black;
 }
 
 .header.sticky {
@@ -76,15 +77,19 @@ section {
 
 
 
+/* CARDS AND SECTIONS */
 
 
+#edtech {
+    padding-top: 1rem;
+  }
 
 .top-per {
     margin-top: 3rem;
   }
 
 .section-heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 4rem;
   }
   
@@ -96,9 +101,9 @@ section {
     margin-top: 4rem;
   }
   
-  .card {
+  /* .card {
     width: calc(25% - 2rem);
-    height: 30rem;
+    height: 35rem;
     background-color: #fff;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
@@ -109,11 +114,13 @@ section {
     width: 100%;
     height: 60%;
     object-fit: cover;
+    overflow: hidden;
     border-radius: 1.5rem 1.5rem 0 0;
   }
   
   .card h3 {
     font-size: 2rem;
+    color: black;
     margin-top: 1.5rem;
   }
   
@@ -121,6 +128,66 @@ section {
     font-size: 1.6rem;
     margin-top: 1rem;
     color: #666;
+  } */
+
+
+
+
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(25% - 2rem);
+    height: 35rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+  
+  .card h3 {
+    font-size: 2rem;
+    color: black;
+    margin-top: 1.5rem;
+  }
+  
+  /* .card p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: #666;
+  } */
+
+
+
+  .card p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: #666;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* height:100%; */
+  }
+
+
+
+  i{
+    color: black;
   }
   
 

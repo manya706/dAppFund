@@ -1,10 +1,10 @@
 
 # dAppFund
 
-Web3 based Secure Crowdfunding Website for Startups.
+Web3 based Secure Investing Website for Startups.
 
 
-dAppFund(Decentralized Application Fund) is a decentralized crowdfunding website that utilizes Web 3 technology and smart contracts to provide a secure and transparent platform for fundraising. The website is designed to allow individuals or groups to create fundraising campaigns for a variety of purposes, such as charitable causes, entrepreneurial ventures, creative projects, and more. Unlike traditional crowdfunding platforms, which rely on centralized intermediaries to manage transactions and funds, our platform uses smart contracts to automate the process and ensure transparency, security, and trust.
+dAppFund(Decentralized Application Fund) is a decentralized investing website that utilizes Web 3 technology and smart contracts to provide a secure and transparent platform for fundraising. The website is designed to allow individuals or groups to create fundraising campaigns for a variety of purposes, such as charitable causes, entrepreneurial ventures, creative projects, and more. Unlike traditional investing platforms, which rely on centralized intermediaries to manage transactions and funds, our platform uses smart contracts to automate the process and ensure transparency, security, and trust.
 
 
 Basically, smart contracts are self-executing programs that run on a blockchain network, such as Ethereum. They act as a set of rules and conditions that govern the behaviour of the platform, allowing users to interact with each other and with the platform in a decentralized manner. This means that the platform operates without the need for a central authority, reducing the risk of fraud and improving the efficiency of the process.

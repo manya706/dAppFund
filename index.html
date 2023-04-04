@@ -32,9 +32,9 @@
         <div class="home-content">
             <h3>This is</h3>
             <h1>dAppFund</h1>
-            <h3>A <span>decentralized</span> crowdfunding website</h3>
-            <p>A decentralized crowdfunding website that utilizes Web 3 technology and smart contracts to provide a
-                secure and transparent platform for fundraising.</p>
+            <h3>A <span>decentralized</span> investing website</h3>
+            <p>A decentralized investing website that utilizes Web 3 technology and smart contracts to provide a
+                secure and transparent platform for Pre-IPO investment.</p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -42,9 +42,13 @@
                 <a href="#"><i class='bx bxl-instagram-alt'></i></a>
             </div>
             <!-- <a href="#" class="btn">Connect Wallet</a> -->
-            <button class="btn" id="connect-button">Connect Wallet</button>
-
+            <button class="btn" id="connect-button">Investor Login</button>
             <script>
+                document.getElementById('connect-button').addEventListener('click', event => {
+                    window.location.assign('login-signup.html');
+                })
+            </script>
+            <!-- <script>
                 document.getElementById('connect-button').addEventListener('click', event => {
                     let account;
                     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
@@ -104,7 +108,7 @@
                         console.log("Please install MetaMask");
                     }
                 });
-            </script>
+            </script> -->
 
         </div>
         <div class="home-img">
@@ -122,12 +126,11 @@
         <div class="about-content">
             <h2 class="heading">Get <span>Funded</span> Through Us!</h2>
             <h3></h3>
-            <p style="text-align: justify;">dAppFund(Decentralized Application Fund) is a decentralized crowdfunding
+            <p style="text-align: justify;">dAppFund(Decentralized Application Fund) is a decentralized investing
                 website that utilizes Web 3
-                technology and smart contracts to provide a secure and transparent platform for fundraising. The website
-                is designed to allow individuals or groups to create fundraising campaigns for a variety of purposes,
-                such as charitable causes, entrepreneurial ventures, creative projects, and more. Unlike traditional
-                crowdfunding platforms, which rely on centralized intermediaries to manage transactions and funds, our
+                technology and smart contracts to provide a secure and transparent platform for investing. The website
+                is designed to allow individuals or groups to invest in entrepreneurial ventures, creative projects, and more. Unlike traditional
+                investing platforms, which rely on centralized intermediaries to manage transactions and funds, our
                 platform uses smart contracts to automate the process and ensure transparency, security, and trust.
             </p>
             <p style="text-align: justify;" id="hidden-text">

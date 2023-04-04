@@ -1,135 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- box icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/dashboard.css" />
-  </head>
-  <body >
-    <!-- LOADER -->
-  
-    <!-- <div class="loader" id="loader">
-        <div class="box box0">
-        </div>
-        <div class="box box1">
-        </div>
-        <div class="box box2">
-        </div>
-        <div class="box box3">
-        </div>
-        <div class="box box4">
-        </div>
-        <div class="box box5">
-        </div>
-        <div class="box box6">
-        </div>
-        <div class="box box7">
-        </div>
-        <div class="ground">
-        </div>
-    </div> -->
-    <!-- LOADER END -->
-    <!-- header design -->
-    <header class="header">
-      <a href="#" class="logo">dAppFund.</a>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <body>
+        <!-- header design -->
+        <header class="header">
+            <a href="#" class="logo">dAppFund.</a>
+    
+            <i class='bx bx-menu' id="menu-icon"></i>
+    
+            <nav class="navbar">
+                <a href="#top-per" class="active">Top</a>
+                <a href="#edtech">Edtech</a>
+                <a href="#fintech">Fintech</a>
+                <a href="#contact">Profile</a>
+                <button class="btn" id="connect-button">Connect Wallet</button>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+            <script>
+                document.getElementById('connect-button').addEventListener('click', event => {
+                    let account;
+                    if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
+                        try {
+                            ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
+                                account = accounts[0];
+                                console.log(account);
 
-      <nav class="navbar">
-        <a href="#top-per" class="active">Top</a>
-        <a href="#edtech">Edtech</a>
-        <a href="#fintech">Fintech</a>
-        <a href="#contact">Profile</a>
-      </nav>
-    </header>
+                                const popup = document.createElement('div');
+                                popup.classList.add('popup');
+                                popup.textContent = "Wallet Has Been Successfully Connected To This Site";
+                                document.body.appendChild(popup);
 
-    <section class="top-per" id="top-per">
-      <div class="section-heading">Top Performing Pre IPO's</div>
-      <div class="card-container">
-        <div class="card">
-          <img
-            src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg"
-            alt=""
-          />
-          <h3>
-            Anuj
-            <a href="https://dealsonkicks.selloship.com/">
-              <i class="bx bx-link-external"></i>
-            </a>
-          </h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perspiciatis, excepturi.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg"
-            alt=""
-          />
-          <h3>Anuj</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perspiciatis, excepturi.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg"
-            alt=""
-          />
-          <h3>Anuj</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perspiciatis, excepturi.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg"
-            alt=""
-          />
-          <h3>Anuj</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perspiciatis, excepturi.
-          </p>
-        </div>
-      </div>
-    </section>
+                                setTimeout(() => {
+                                    popup.classList.add('show');
+                                    setTimeout(() => {
+                                        popup.classList.remove('show');
+                                        setTimeout(() => {
+                                            popup.remove();
+                                        }, 500);
+                                    }, 1200);
+                                }, 100);
 
-    <section class="edtech" id="edtech">
-      <div class="section-heading">Edtech</div>
-      <div class="card-container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-    </section>
+                            });
+                        } catch (err) {
+                            console.error(err.message);
+                            const popup = document.createElement('div');
+                                popup.classList.add('popup');
+                                popup.textContent = "There has been some error in connection";
+                                document.body.appendChild(popup);
 
-    <section class="fintech" id="fintech">
-      <div class="section-heading">Fintech</div>
-      <div class="card-container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-    </section>
-  </body>
-  <script>
-    var preloader = document.getElementById('loader');
+                                setTimeout(() => {
+                                    popup.classList.add('show');
+                                    setTimeout(() => {
+                                        popup.classList.remove('show');
+                                        setTimeout(() => {
+                                            popup.remove();
+                                        }, 500);
+                                    }, 1200);
+                                }, 100);
+                        }
+                    } else {
+                        const popup = document.createElement('div');
+                                popup.classList.add('popup');
+                                popup.textContent = "It seems, you don't have metamask on your device, Please install MetaMask First";
+                                document.body.appendChild(popup);
 
-    function loading(){
-        preloader.style.display = 'none';
-    }
-  </script>
+                                setTimeout(() => {
+                                    popup.classList.add('show');
+                                    setTimeout(() => {
+                                        popup.classList.remove('show');
+                                        setTimeout(() => {
+                                            popup.remove();
+                                        }, 500);
+                                    }, 1200);
+                                }, 100);
+                        console.log("Please install MetaMask");
+                    }
+                });
+            </script>
+            </nav>
+        </header>
+
+        <section class="top-per" id="top-per">
+            <div class="section-heading">Top Performing Pre IPO's</div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
+                    <h3>Anuj
+                        <a href="https://dealsonkicks.selloship.com/">
+
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, excepturi.</p>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
+                    <h3>Anuj</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, excepturi.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
+                    <h3>Anuj</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, excepturi.</p>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
+                    <h3>Anuj</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, excepturi.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="edtech" id="edtech">
+            <div class="section-heading">Edtech</div>
+            <div class="card-container">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </section>
+        
+        <section class="fintech" id="fintech">
+            <div class="section-heading">Fintech</div>
+            <div class="card-container">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </section>
+        
+    
+</body>
 </html>

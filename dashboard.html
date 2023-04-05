@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
+
 <body>
+
     <body>
         <!-- header design -->
         <header class="header">
             <a href="#" class="logo">dAppFund.</a>
-    
+
             <i class='bx bx-menu' id="menu-icon"></i>
-    
+
             <nav class="navbar">
                 <a href="#top-per" class="active">Top</a>
                 <a href="#edtech">Edtech</a>
@@ -24,34 +27,34 @@
                 <a href="#contact">Profile</a>
                 <button class="btn" id="connect-button">Connect Wallet</button>
 
-            <script>
-                document.getElementById('connect-button').addEventListener('click', event => {
-                    let account;
-                    if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
-                        try {
-                            ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
-                                account = accounts[0];
-                                console.log(account);
+                <script>
+                    document.getElementById('connect-button').addEventListener('click', event => {
+                        let account;
+                        if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
+                            try {
+                                ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
+                                    account = accounts[0];
+                                    console.log(account);
 
-                                const popup = document.createElement('div');
-                                popup.classList.add('popup');
-                                popup.textContent = "Wallet Has Been Successfully Connected To This Site";
-                                document.body.appendChild(popup);
+                                    const popup = document.createElement('div');
+                                    popup.classList.add('popup');
+                                    popup.textContent = "Wallet Has Been Successfully Connected To This Site";
+                                    document.body.appendChild(popup);
 
-                                setTimeout(() => {
-                                    popup.classList.add('show');
                                     setTimeout(() => {
-                                        popup.classList.remove('show');
+                                        popup.classList.add('show');
                                         setTimeout(() => {
-                                            popup.remove();
-                                        }, 500);
-                                    }, 1200);
-                                }, 100);
+                                            popup.classList.remove('show');
+                                            setTimeout(() => {
+                                                popup.remove();
+                                            }, 500);
+                                        }, 1200);
+                                    }, 100);
 
-                            });
-                        } catch (err) {
-                            console.error(err.message);
-                            const popup = document.createElement('div');
+                                });
+                            } catch (err) {
+                                console.error(err.message);
+                                const popup = document.createElement('div');
                                 popup.classList.add('popup');
                                 popup.textContent = "There has been some error in connection";
                                 document.body.appendChild(popup);
@@ -65,26 +68,26 @@
                                         }, 500);
                                     }, 1200);
                                 }, 100);
-                        }
-                    } else {
-                        const popup = document.createElement('div');
-                                popup.classList.add('popup');
-                                popup.textContent = "It seems, you don't have metamask on your device, Please install MetaMask First";
-                                document.body.appendChild(popup);
+                            }
+                        } else {
+                            const popup = document.createElement('div');
+                            popup.classList.add('popup');
+                            popup.textContent = "It seems, you don't have metamask on your device, Please install MetaMask First";
+                            document.body.appendChild(popup);
 
+                            setTimeout(() => {
+                                popup.classList.add('show');
                                 setTimeout(() => {
-                                    popup.classList.add('show');
+                                    popup.classList.remove('show');
                                     setTimeout(() => {
-                                        popup.classList.remove('show');
-                                        setTimeout(() => {
-                                            popup.remove();
-                                        }, 500);
-                                    }, 1200);
-                                }, 100);
-                        console.log("Please install MetaMask");
-                    }
-                });
-            </script>
+                                        popup.remove();
+                                    }, 500);
+                                }, 1200);
+                            }, 100);
+                            console.log("Please install MetaMask");
+                        }
+                    });
+                </script>
             </nav>
         </header>
 
@@ -92,49 +95,45 @@
             <div class="section-heading">Top Performing Pre IPO's</div>
             <div class="card-container">
                 <div class="card">
-                    <img src="images\dream11.jpg" alt="" style="width: 287px; height: 300px;">
+                    <a href="https://www.dream11.com/"><img src="images/dream11copy.png" alt="">
+                    </a>
                     <h3>Dream11
-                        <a href="https://www.dream11.com/">
-
-                            <i class='bx bx-link-external'></i>
-                        </a>
+                        <button class="btn2" id="connect-button">Manya</button>
                     </h3>
                     <p>A fantasy sports platform that has been valued at over $2.5 billion</p>
-                    
+
                 </div>
                 <div class="card">
-                    <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
-                    <h3>ShareChat
+
                     <a href="https://sharechat.com/">
 
-                      <i class='bx bx-link-external'></i>
+                        <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
                     </a>
+                    <h3>ShareChat
+                        <button class="btn2" id="connect-button">Manya</button>
                     </h3>
                     <p>A social media and messaging platform that has been valued at over $2 billion</p>
                 </div>
                 <div class="card">
-                    <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
+                    <a href="https://pharmeasy.in/">
+                        <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt=""></a>
                     <h3>PharmEasy
-                      <a href="https://pharmeasy.in/">
-
-                        <i class='bx bx-link-external'></i>
-                      </a>
+                        <button class="btn2" id="connect-button">Manya</button>
                     </h3>
                     <p> An online pharmacy and healthcare platform that has been valued at over $1.5 billion</p>
                 </div>
                 <div class="card">
-                    <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt="">
+                    <a href="https://pharmeasy.in/">
+                        <img src="https://cdn.selloship.com/images/store_logo_sm/611a577bc2b28.jpeg" alt=""></a>
                     <h3>Byjus
-                      <a href="https://byjus.com/">
-
-                        <i class='bx bx-link-external'></i>
-                      </a>
+                        <button class="btn2" id="connect-button">Manya</button>
                     </h3>
-                    <p>An edtech startup that provides online learning services and has been valued at over $16 billion</p>
+                    <p>An edtech startup that provides online learning services and has been valued at over $16 billion
+                    </p>
                 </div>
             </div>
         </section>
-        
+
         <section class="edtech" id="edtech">
             <div class="section-heading">Edtech</div>
             <div class="card-container">
@@ -144,7 +143,7 @@
                 <div class="card"></div>
             </div>
         </section>
-        
+
         <section class="fintech" id="fintech">
             <div class="section-heading">Fintech</div>
             <div class="card-container">
@@ -154,7 +153,8 @@
                 <div class="card"></div>
             </div>
         </section>
-        
-    
-</body>
+
+
+    </body>
+
 </html>

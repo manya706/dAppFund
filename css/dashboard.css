@@ -64,12 +64,12 @@ section {
   transition: 0.3s;
 }
 
-.btn{
+/* .btn{
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
   transition: 0.3s;
-}
+} */
 
 .navbar a:hover,
 .navbar a.active {
@@ -108,41 +108,6 @@ section {
     align-items: center;
     margin-top: 4rem;
   }
-  
-  /* .card {
-    width: calc(25% - 2rem);
-    height: 35rem;
-    background-color: #fff;
-    border-radius: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 1.5rem 1.5rem 0 0;
-  }
-  
-  .card h3 {
-    font-size: 2rem;
-    color: black;
-    margin-top: 1.5rem;
-  }
-  
-  .card p {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    color: #666;
-  } */
-
-
-
-
-
-
   .card {
     display: flex;
     flex-direction: column;
@@ -152,6 +117,7 @@ section {
     width: calc(25% - 2rem);
     height: 35rem;
     background-color: #fff;
+    overflow: hidden;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
     box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
@@ -159,28 +125,22 @@ section {
   
   .card img {
     width: 100%;
-    height: 60%;
+    height: 100%;
     object-fit: cover;
-    overflow: hidden;
-    border-radius: 1.5rem 1.5rem 0 0;
+    border: 1.5px solid black;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
   }
   
   .card h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: black;
     margin-top: 1.5rem;
   }
-  
-  /* .card p {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    color: #666;
-  } */
 
 
 
   .card p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     color: #666;
     text-align: justify;
@@ -300,12 +260,33 @@ section {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--second-bg-color);
+  /* color: var(--second-bg-color); */
   letter-spacing: 0.1rem;
   font-weight: 600;
+  margin-left: 4rem;
   transition: 0.5s ease;
 }
 
 .btn:hover {
   box-shadow: none;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 0.9rem 1rem;
+  background: var(--bg-color);
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: var(--text-color);
+  letter-spacing: 0.12rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn2:hover {
+  box-shadow: none;
+  background: var(--main-color);
+  color: var(--bg-color);
 }

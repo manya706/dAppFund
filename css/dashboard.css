@@ -269,6 +269,7 @@ section {
 
 .btn:hover {
   box-shadow: none;
+  cursor: pointer;
 }
 
 .btn2 {

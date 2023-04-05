@@ -281,12 +281,13 @@ section {
   margin-left: 1rem;
   color: var(--text-color);
   letter-spacing: 0.12rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   transition: 0.5s ease;
 }
 
 .btn2:hover {
-  box-shadow: none;
+  /* box-shadow: 0rem 0rem 1rem black;
   background: var(--main-color);
-  color: var(--bg-color);
+  color: var(--bg-color); */
+  cursor: pointer;
 }

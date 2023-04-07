@@ -12,11 +12,16 @@ Basically, smart contracts are self-executing programs that run on a blockchain 
 
 The platform will be built on a decentralized network, meaning that will operates without a central authority or intermediary. Instead, the platform uses smart contracts, which are self-executing computer programs that are stored on a blockchain, to manage and automate the fundraising process.
 
+## How Blockchain Technology Can be Used to Secure Funding for Startups?
+
+
+Blockchain is a reliable and decentralized database that facilitates secure and tamper-proof record-keeping. Many startups find it useful for raising funds due to its efficiency and transparency. By using blockchain, startups can create digital tokens that represent shares or debts for the company, which can be traded to provide liquidity to early investors. Moreover, startups can leverage blockchain for an initial coin offering (ICO) to receive cryptocurrency-based crowdfunding, generating early-stage funds without giving away equity.
+
 
 Users who wish to create a campaign on the dAppFund platform would need to register with an Ethereum wallet, which will allow them to create a smart contract that outlines the details of their campaign, including the funding goal, the duration of the campaign, and the terms of the fundraising. Once the smart contract is created, it will be uploaded to the Ethereum network, where it will be visible to potential backers.
 
 
-Backers who wish to support a campaign can view the available campaigns on the dAppFund platform and contribute to them by sending Ethereum to the corresponding smart contract. The smart contract will automatically release the funds to the campaign creator when the funding goal is reached. If the funding goal is not reached within the specified time frame, the smart contract will automatically return the contributed funds to the backers.
+Backers who wish to support a campaign can view the available campaigns on the dAppFund platform and contribute to them by buying their tokens. The smart contract will automatically release the funds to the campaign creator when the funding goal is reached. If the funding goal is not reached within the specified time frame, the smart contract will automatically return the contributed funds to the backers.
 
 
 One of the main advantages of dAppFund is that it provides a transparent and secure fundraising process, as all transactions are recorded on the blockchain, and the smart contracts are designed to operate automatically, without the need for a central authority or intermediary. This reduces the risk of fraud or mismanagement and provides greater accountability and transparency for both campaign creators and backers.

@@ -12,7 +12,7 @@ Basically, smart contracts are self-executing programs that run on a blockchain 
 
 The platform will be built on a decentralized network, meaning that will operates without a central authority or intermediary. Instead, the platform uses smart contracts, which are self-executing computer programs that are stored on a blockchain, to manage and automate the fundraising process.
 
-## How Blockchain Technology Can be Used to Secure Funding for Startups?
+## Get startup funding with blockchain technology !
 
 
 Blockchain is a reliable and decentralized database that facilitates secure and tamper-proof record-keeping. Many startups find it useful for raising funds due to its efficiency and transparency. By using blockchain, startups can create digital tokens that represent shares or debts for the company, which can be traded to provide liquidity to early investors. Moreover, startups can leverage blockchain for an initial coin offering (ICO) to receive cryptocurrency-based crowdfunding, generating early-stage funds without giving away equity.

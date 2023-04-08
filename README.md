@@ -1,7 +1,7 @@
 
 # dAppFund
 
-Decentralized pre-seed funding for tomorrow's innovators.
+Supporting Entrepreneurship with Decentralized Pre-Seed Funding.
 
 
 dAppFund(Decentralized Application Fund) is a decentralized investing website that utilizes Web 3 technology and smart contracts to provide a secure and transparent platform for fundraising. The website is designed to allow individuals or groups to create fundraising campaigns for a variety of purposes, such as charitable causes, entrepreneurial ventures, creative projects, and more. Unlike traditional investing platforms, which rely on centralized intermediaries to manage transactions and funds, our platform uses smart contracts to automate the process and ensure transparency, security, and trust.

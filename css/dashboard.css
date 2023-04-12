@@ -82,98 +82,82 @@ section {
   display: none;
 }
 
-
-
-
 /* CARDS AND SECTIONS */
 
-
 #edtech {
-    padding-top: 1rem;
-  }
+  padding-top: 6rem;
+}
+#fintech {
+  padding-top: 6rem;
+}
 
 .top-per {
-    margin-top: 3rem;
-  }
+  margin-top: 3rem;
+}
 
 .section-heading {
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
-  }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 4rem;
-    transition: 0.4s;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: calc(25% - 2rem);
-    height: 35rem;
-    background-color: #fff;
-    overflow: hidden;
-    border-radius: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
-    transition: 0.4s;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 1.5px solid black;
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-  }
-  
-  .card h3 {
-    font-size: 1.8rem;
-    color: black;
-    margin-top: 1.5rem;
-  }
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  transition: 0.4s;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: calc(25% - 2rem);
+  height: 35rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
 
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1.5px solid black;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
 
-  .card p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: #666;
-    text-align: justify;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    /* height:100%; */
-  }
+.card h3 {
+  font-size: 1.8rem;
+  color: black;
+  margin-top: 1.5rem;
+}
 
-  .card:hover{
-    transform: scale(0.9, 0.9);
-  }
+.card p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #666;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* height:100%; */
+}
 
+.card:hover {
+  transform: scale(0.9, 0.9);
+}
 
-
-  i{
-    color: black;
-  }
-  
-
-
-
-
-
-
-
-
-
-
+i {
+  color: black;
+}
 
 /* MEDIA QUERY */
 @media (max-width: 1200px) {
@@ -254,10 +238,6 @@ section {
   }
 }
 
-
-
-
-
 /* button */
 .btn {
   display: inline-block;
@@ -300,6 +280,7 @@ section {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -321,9 +302,9 @@ section {
 
 
 
+=======
+>>>>>>> 5bb709305eafc1da74c176409f56efaf9f28991a
 /* LAST 3 CARDS */
-
-
 
 .cards-list {
   z-index: 0;
@@ -339,7 +320,8 @@ section {
   width: 300px;
   height: 400px;
   border-radius: 20px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.4s;
 }
@@ -353,7 +335,7 @@ section {
 .newc .card_image img {
   width: 100%;
   height: 75%;
-  border-radius: 15px 15px 0px 0px ;
+  border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
 
@@ -367,8 +349,8 @@ section {
 
 .newc:hover {
   transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
 .title-white {
@@ -378,7 +360,6 @@ section {
 .title-black {
   color: black;
 }
-
 
 .newcbtn {
   padding: 0.9rem 3rem;
@@ -396,11 +377,13 @@ section {
   box-shadow: 0 0 1rem var(--main-color);
 }
 
-
 @media all and (max-width: 500px) {
   .card-list {
     flex-direction: column;
   }
 }
+<<<<<<< HEAD
 
 >>>>>>> cd0741594f475f7a4514bb361eb47a2a63ca2e23
+=======
+>>>>>>> 5bb709305eafc1da74c176409f56efaf9f28991a

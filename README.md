@@ -1,7 +1,7 @@
 
 # dAppFund
 
-Web3 based Secure Investing Website for Startups.
+Supporting Entrepreneurship with Decentralized Pre-Seed Funding.
 
 
 dAppFund(Decentralized Application Fund) is a decentralized investing website that utilizes Web 3 technology and smart contracts to provide a secure and transparent platform for fundraising. The website is designed to allow individuals or groups to create fundraising campaigns for a variety of purposes, such as charitable causes, entrepreneurial ventures, creative projects, and more. Unlike traditional investing platforms, which rely on centralized intermediaries to manage transactions and funds, our platform uses smart contracts to automate the process and ensure transparency, security, and trust.
@@ -18,16 +18,19 @@ The platform will be built on a decentralized network, meaning that will operate
 Blockchain is a reliable and decentralized database that facilitates secure and tamper-proof record-keeping. Many startups find it useful for raising funds due to its efficiency and transparency. By using blockchain, startups can create digital tokens that represent shares or debts for the company, which can be traded to provide liquidity to early investors. Moreover, startups can leverage blockchain for an initial coin offering (ICO) to receive cryptocurrency-based crowdfunding, generating early-stage funds without giving away equity.
 
 
-Users who wish to create a campaign on the dAppFund platform would need to register with an Ethereum wallet, which will allow them to create a smart contract that outlines the details of their campaign, including the funding goal, the duration of the campaign, and the terms of the fundraising. Once the smart contract is created, it will be uploaded to the Ethereum network, where it will be visible to potential backers.
-
-
-Backers who wish to support a campaign can view the available campaigns on the dAppFund platform and contribute to them by buying their tokens. The smart contract will automatically release the funds to the campaign creator when the funding goal is reached. If the funding goal is not reached within the specified time frame, the smart contract will automatically return the contributed funds to the backers.
-
-
 One of the main advantages of dAppFund is that it provides a transparent and secure fundraising process, as all transactions are recorded on the blockchain, and the smart contracts are designed to operate automatically, without the need for a central authority or intermediary. This reduces the risk of fraud or mismanagement and provides greater accountability and transparency for both campaign creators and backers.
 
 
 Overall, the dAppFund project aims to leverage the power of Web 3 and blockchain technology to provide a decentralized and secure platform for crowdfunding, promoting innovation and collaboration while minimizing the risk of fraud and misuse of funds.
+
+## Methodology
+
+While developing our ICO, our main focus was to make it secure and user-friendly. To achieve this, we chose to use the standard ERC20 token template to create a fungible token.
+Our tokens are built on Solidity, a popular programming language for developing smart contracts on the Ethereum blockchain. To ensure the quality and reliability of our code, we rigorously tested it multiple times using the Remix IDE. This allowed us to identify and address any issues or bugs before deployment, ensuring a smooth and secure user experience for our investors.
+This allowed us to establish a strong foundation for our token design and ensure its compatibility with other platforms. In addition, we built our website using HTML, CSS, and Javascript to create an intuitive and easy-to-navigate user interface. Our aim was to make the ICO accessible and understandable to everyone, regardless of their technical background.
+
+For companies looking to create an ICO for initial fundraising, it is essential to submit a clear and compelling explanation of their product's ideology. This helps in backing their valuation and token value.
+
 ## Authors
 
 - [@Manya Sharma](https://github.com/manya706)

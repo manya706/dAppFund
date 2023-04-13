@@ -1,5 +1,5 @@
+let account;
 document.getElementById('connect-button').addEventListener('click', event => {
-    let account;
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
         try {
             ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
@@ -10,7 +10,7 @@ document.getElementById('connect-button').addEventListener('click', event => {
                 popup.classList.add('popup');
                 popup.textContent = "Wallet Has Been Successfully Connected To This Site";
                 document.body.appendChild(popup);
-
+                document.getElementById('address_show').innerText = account;
                 setTimeout(() => {
                     popup.classList.add('show');
                     setTimeout(() => {

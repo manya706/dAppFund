@@ -29,6 +29,8 @@ body {
   color: var(--text-color);
 }
 
+
+
 section {
   min-height: 60vh;
   padding: 6.5rem 9% 2rem;
@@ -200,3 +202,7 @@ section {
   margin-top: 2rem;
   cursor: pointer;
 } */
+
+.form{
+  /* visibility: hidden !important; */
+}

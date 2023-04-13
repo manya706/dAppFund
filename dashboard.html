@@ -9,6 +9,7 @@
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="ico-form.css">
 </head>
 
 <body>
@@ -121,6 +122,27 @@
         </div>
         </div>
     </section>
+
+    <section class="form">
+        <section class="contact" id="contact">
+          <h2 class="heading">Buy <span>ICO</span> tokens </h2>
+          <div class="Info">
+            <h3 id="address">Wallet Address : <p id="address_show"> </p></h3>
+            <script src="metamask.js"></script>
+            <h3 id="price">Token price : </h3>
+            <h3 id="total_tokens">Total Tokens : </h3>
+            <h3 id="Token_price">ICO Token Price: </h3>
+          </div>
+          <form>
+    
+            <div class="input-box">
+              <input type="number" id="number" placeholder="Number of tokens">
+              <input type="text" id="acc_address" name="acc_address" placeholder="Account" />
+            </div>
+            <button class="btn" onclick="transfer()">Send Token</button>
+          </form>
+        </section>
+      </section>
 
 
 </body>

@@ -8,9 +8,9 @@ document.getElementById('connect-button').addEventListener('click', event => {
 
                 const popup = document.createElement('div');
                 popup.classList.add('popup');
-                popup.textContent = "Wallet Has Been Successfully Connected To This Site";
+                popup.textContent = "Wallet Has Been Successfully Connected To This Site, and your wallet id is "+account;
                 document.body.appendChild(popup);
-                document.getElementById('address_show').innerText = account;
+                // document.getElementById('address_show').innerText = account;
                 setTimeout(() => {
                     popup.classList.add('show');
                     setTimeout(() => {
@@ -20,13 +20,14 @@ document.getElementById('connect-button').addEventListener('click', event => {
                         }, 500);
                     }, 1200);
                 }, 100);
-
+                
             });
         } catch (err) {
             console.error(err.message);
             const popup = document.createElement('div');
             popup.classList.add('popup');
             popup.textContent = "There has been some error in connection";
+            popup.innerText=account;
             document.body.appendChild(popup);
 
             setTimeout(() => {

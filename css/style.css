@@ -479,11 +479,11 @@ span {
 
 /* STUPID PRE-SEED INFO */
 
-/* .preseed { */
-  /* background: #fff8f2; */
-  /* background: -webkit-linear-gradient(to right, #fff8f2, #fddbce); */
-  /* background: linear-gradient(to right, #fff8f2, #fddbce); */
-/* } */
+.preseed { 
+  background: #fff8f2;
+  background: -webkit-linear-gradient(to right, #fff8f2, #fddbce);
+  background: linear-gradient(to right, #fff8f2, #fddbce);
+}
 
 
 

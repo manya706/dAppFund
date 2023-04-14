@@ -18,7 +18,7 @@ document.getElementById('connect-button').addEventListener('click', event => {
                         setTimeout(() => {
                             popup.remove();
                         }, 500);
-                    }, 1200);
+                    }, 1900);
                 }, 100);
                 
             });
@@ -37,7 +37,7 @@ document.getElementById('connect-button').addEventListener('click', event => {
                     setTimeout(() => {
                         popup.remove();
                     }, 500);
-                }, 1200);
+                }, 1900);
             }, 100);
         }
     } else {
@@ -53,7 +53,7 @@ document.getElementById('connect-button').addEventListener('click', event => {
                 setTimeout(() => {
                     popup.remove();
                 }, 500);
-            }, 1200);
+            }, 1900);
         }, 100);
         console.log("Please install MetaMask");
     }

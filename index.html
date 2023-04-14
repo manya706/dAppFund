@@ -13,6 +13,22 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      //To minimise the height of chatbox
+      $(document).ready(function() {
+          window.addEventListener('dfMessengerLoaded', function (event) {
+          $r1 = document.querySelector("df-messenger");
+          $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+          $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+          var sheet = new CSSStyleSheet;
+          // manage box height from here
+          sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 450px }`);
+          $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+          });
+      });
+  </script>
   </head>
   <!-- added comment -->
   <body >
@@ -121,6 +137,45 @@
         <a class="btn" id="read-more-btn" onclick="toggleText()">Read More</a>
       </div>
     </section>
+
+    <!-- WHY PRE-SEED INVESTING?   -->
+    <!-- <div class="preseed"> -->
+        <main class="min-h-screen grid grid-cols-12 container mx-auto px-10 py-14 gap-x-5 place-content-center">
+            <h1 class="col-span-12 lg:col-span-7 font-bold text-3xl md:text-5xl lg:text-6xl self-center leading-3">Your personalized learning journey</h1>
+            <p class="col-span-12 mt-5 lg:mt-0 lg:col-span-5 self-center text-gray-700 text-lg">Smarty gives you the platform and knowledge you need to succeed. One tool could change everything.</p>
+          
+            <article class="col-span-12 grid grid-cols-12 gap-x-5 md:mt-16 xl:mt-10 2xl:mt-5 items-center">
+              <div class="order-2 md:order-1 col-span-12 lg:col-span-7 grid sm:grid-cols-2 gap-7 lg:gap-x-0 md:gap-y-16">
+                <div class="lg:max-w-[80%]">
+                  <p class="number flex items-end text-5xl font-bold">1<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 mb-1"></span></p>
+          
+                  <h2 class="text-xl lg:text-2xl font-bold my-4">Start your account</h2>
+                  <p class="text-gray-700 text-lg">You get a 2-week free trial to kick the Smarty tires. We want you to get the full experience.</p>
+                </div>
+                <div class="lg:max-w-[80%]">
+                  <p class="number flex items-end text-5xl font-bold">2<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 mb-1"></span></p>
+          
+                  <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-3">Learn to learn</h2>
+                  <p class="text-gray-700 text-lg">We give you a free course that guides you through the process of learning.</p>
+                </div>
+                <div class="lg:max-w-[80%]">
+                  <p class=" number flex items-end text-5xl font-bold">3<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 "></span></p>
+          
+                  <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-3">Use learning materials</h2>
+                  <p class="text-gray-700 text-lg">Use our multimedia lectures, videos, and coaching sessions. Unlimited everything!</p>
+                </div>
+                <div class="lg:max-w-[80%]">
+                  <p class="number flex items-end text-5xl font-bold">4<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 -mb-1"></span></p>
+          
+                  <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-3">Create a success story</h2>
+                  <p class="text-gray-700 text-lg">With access to online learning resources anyone can transform their lives in meaningful ways.</p>
+                </div>
+              </div>
+              <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="max-w-full aspect-[3/2] lg:aspect-square object-cover col-span-12 my-10 md:mb-0 md:mt-14 lg:my-0 lg:col-span-5 rounded-xl shadow-lg lg:h-full order-1">
+            </article>
+          
+          </main>
+
     <!-- </div> -->
 
     <!-- services section design -->
@@ -240,5 +295,24 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="dAppFund"
+      agent-id="fb499369-df14-40d7-8867-8f9a51098cea"
+      language-code="en"
+    ></df-messenger>
+
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: rgb(35, 183, 194);
+        --df-messenger-button-titlebar-color:  rgb(48, 188, 198);
+        --df-messenger-chat-background-color: #f4f8f7;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #111215;
+        --df-messenger-user-message: rgb(32, 221, 235);
+      }
+    </style>
   </body>
 </html>

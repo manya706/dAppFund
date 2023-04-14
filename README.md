@@ -31,6 +31,60 @@ This allowed us to establish a strong foundation for our token design and ensure
 
 For companies looking to create an ICO for initial fundraising, it is essential to submit a clear and compelling explanation of their product's ideology. This helps in backing their valuation and token value.
 
+## Tech Stacks
+
+<table border="0">
+  <tr>
+    <th>HTML</th>
+    <th>CSS</th>
+    <th>JavaScript</th>
+    <th>PHP</th>
+    <th>SOLIDITY</th>
+    <th>FIREBASE</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></td>
+    <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></td>
+    <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></td>
+    <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg" alt="Solidity" width="40" height="40"/></td>
+    <td><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/></td>
+  </tr>
+</table>
+
+Frontend:
+
+	Our website is built using a combination of modern web dev technologies that
+    helped us achieve a seamless user experience. 
+    
+    We used pure HTML and CSS to structure and design the frontend of our website. 
+    
+    JavaScript was utilized to add dynamic functionalities and interactivity to 
+    our web pages, making them more engaging and user-friendly.
+
+Backend:
+
+	We created our own ERC20 tokens, known as dAppCoin(DC), and used Solidity 
+    programming language to write smart contracts. 
+    
+    We even deployed them on HardHat, an open-source development environment 
+    for building and testing smart contracts.
+
+Google Cloud Service:
+
+	We have integrated Firebase(A Google Cloud Service), which is a set of backend 
+    cloud computing services and application development platforms provided by 
+    Google Cloud, for our Investor Login and SignUp feature. 
+    
+    Firebase allowed us to build secure and scalable authentication services quickly 
+    and efficiently, making the sign-up process simple and straightforward for our investors.
+
+
+Conclusion:
+
+	Our tech stack represents a perfect blend of frontend and backend technologies 
+    that work together seamlessly to provide our users with a seamless experience.
+
 ## Authors
 
 - [@Manya Sharma](https://github.com/manya706)

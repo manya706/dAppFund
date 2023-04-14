@@ -1,11 +1,10 @@
 async function Click1() {
   try {
+    let z=document.getElementById('token-amt').value;
     const accounts = await ethereum.request({
       method: "eth_requestAccounts",
     });
-    // let z = document.getElementById("token-amt").value;
-    // document.getElementById('address_show').innerText = accounts[0];
-    let s = "0x" + (1000000000000000000).toString(16);
+    let s = "0x" + (z*1000000000000000000).toString(16);
     // document.getElementById('address_show').innerText=accounts;
     const txHash = await ethereum.request({
       method: "eth_sendTransaction",

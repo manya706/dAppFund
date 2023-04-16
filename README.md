@@ -3,14 +3,22 @@
 
 Supporting Entrepreneurship with Decentralized Pre-Seed Funding.
 
+## Problem Statement
+Securing funding for pre-seed startups is often a challenging and time-consuming process. Traditional funding sources such as venture capitalists and angel investors typically require startups to give up equity and control of their company in exchange for funding. Additionally, these traditional sources may not always be accessible to entrepreneurs from certain geographic locations or those who lack established networks.
 
-dAppFund(Decentralized Application Fund) is a decentralized investing website that utilizes Web 3 technology and smart contracts to provide a secure and transparent platform for fundraising. The website is designed to allow individuals or groups to create fundraising campaigns for a variety of purposes, such as charitable causes, entrepreneurial ventures, creative projects, and more. Unlike traditional investing platforms, which rely on centralized intermediaries to manage transactions and funds, our platform uses smart contracts to automate the process and ensure transparency, security, and trust.
+Despite the increasing popularity of blockchain technology, startups still face significant challenges in securing funding, particularly at the pre-seed stage. Traditional funding models can be slow and opaque, leading to delays and inefficiencies in the fundraising process. Additionally, startups often face high barriers to entry and lack access to investors who can provide the resources they need to succeed.
 
+The lack of transparency and accessibility in the traditional funding model has created a funding gap for many pre-seed startups, hindering their ability to grow and innovate. As a result, there is a pressing need for a decentralised blockchain-based platform that can provide startups with access to a wider pool of investors and streamline the fundraising process.
+## Solution
+Our project, "dAppFund", aims to bridge this gap by creating a blockchain-based platform that connects pre-seed startups with investors in a transparent manner. By leveraging the power of blockchain technology, we can ensure that startups receive the funding they need to bring their ideas to life, while also providing investors with greater access to promising projects
 
-Basically, smart contracts are self-executing programs that run on a blockchain network, such as Ethereum. They act as a set of rules and conditions that govern the behaviour of the platform, allowing users to interact with each other and with the platform in a decentralized manner. This means that the platform operates without the need for a central authority, reducing the risk of fraud and improving the efficiency of the process.
+The platform will allow startups to create a project proposal and apply for funding. Investors will have access to top-performing startups that meet our selection criteria and can then review the proposals and choose to invest in the startups they find promising. The funding process will be carried out using cryptocurrency, and the platform will allow for transparent and secure transactions using Metamask.
 
+Our platform provides a simple and user-friendly interface that allows pre-seed startups to submit their investment proposals through a contact form. Once we receive a proposal, our team will conduct a thorough investigation of the startup and verify its authenticity. We will then list the startup on our website with all the relevant details, including project descriptions, financial projections, and team bios, so that investors can easily review and fund them.
 
-The platform will be built on a decentralized network, meaning that will operates without a central authority or intermediary. Instead, the platform uses smart contracts, which are self-executing computer programs that are stored on a blockchain, to manage and automate the fundraising process.
+We will also use a calculated valuation approach to generate specific tokens for each pre-seed startup. These tokens can then be exchanged or sold on different cryptocurrency platforms, providing liquidity and flexibility to investors.
+
+Overall, dAppFund is a game-changer in the pre-seed fundraising space, empowering startups and investors alike to drive innovation and growth.
 
 ## Get startup funding with blockchain technology !
 

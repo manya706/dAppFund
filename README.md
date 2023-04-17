@@ -20,17 +20,6 @@ We will also use a calculated valuation approach to generate specific tokens for
 
 Overall, dAppFund is a game-changer in the pre-seed fundraising space, empowering startups and investors alike to drive innovation and growth.
 
-## Get startup funding with blockchain technology !
-
-
-Blockchain is a reliable and decentralized database that facilitates secure and tamper-proof record-keeping. Many startups find it useful for raising funds due to its efficiency and transparency. By using blockchain, startups can create digital tokens that represent shares or debts for the company, which can be traded to provide liquidity to early investors. Moreover, startups can leverage blockchain for an initial coin offering (ICO) to receive cryptocurrency-based crowdfunding, generating early-stage funds without giving away equity.
-
-
-One of the main advantages of dAppFund is that it provides a transparent and secure fundraising process, as all transactions are recorded on the blockchain, and the smart contracts are designed to operate automatically, without the need for a central authority or intermediary. This reduces the risk of fraud or mismanagement and provides greater accountability and transparency for both campaign creators and backers.
-
-
-Overall, the dAppFund project aims to leverage the power of Web 3 and blockchain technology to provide a decentralized and secure platform for crowdfunding, promoting innovation and collaboration while minimizing the risk of fraud and misuse of funds.
-
 ## Methodology
 
 While developing our ICO, our main focus was to make it secure and user-friendly. To achieve this, we chose to use the standard ERC20 token template to create a fungible token.
@@ -38,6 +27,15 @@ Our tokens are built on Solidity, a popular programming language for developing 
 This allowed us to establish a strong foundation for our token design and ensure its compatibility with other platforms. In addition, we built our website using HTML, CSS, and Javascript to create an intuitive and easy-to-navigate user interface. Our aim was to make the ICO accessible and understandable to everyone, regardless of their technical background.
 
 For companies looking to create an ICO for initial fundraising, it is essential to submit a clear and compelling explanation of their product's ideology. This helps in backing their valuation and token value.
+
+ICO Token Smart Contract :
+STEM Token (Polygon Mumbai Testnet) :
+Contract Address : 0x592314F1F1446c0c3162A6C62de94F819F67F1600
+Polygon Scan Link : [Link](https://mumbai.polygonscan.com/token/0x592314F1F1446c0c3162A6C62de94F819F67F160)
+
+dAppCoin (DC) Token (Sepolia Testnet) :
+Contract Address : 0x71D1362976eC32D57b6ef1ea504A9657F44E6e0F
+EtherScan Link : [Link](https://sepolia.etherscan.io/token/0x71D1362976eC32D57b6ef1ea504A9657F44E6e0F)
 
 ## Tech Stacks
 

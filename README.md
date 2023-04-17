@@ -32,11 +32,13 @@ For companies looking to create an ICO for initial fundraising, it is essential 
 
 ICO Token Smart Contract :
 
-- STEM Token (Polygon Mumbai Testnet) :
+- STEM Token (Polygon Mumbai Testnet) :  
+
 Contract Address : 0x592314F1F1446c0c3162A6C62de94F819F67F1600
 [Polygon Scan Link](https://mumbai.polygonscan.com/token/0x592314F1F1446c0c3162A6C62de94F819F67F160)
 
-- dAppCoin (DC) Token (Sepolia Testnet) :
+- dAppCoin (DC) Token (Sepolia Testnet) :  
+
 Contract Address : 0x71D1362976eC32D57b6ef1ea504A9657F44E6e0F
 [EtherScan Link](https://sepolia.etherscan.io/token/0x71D1362976eC32D57b6ef1ea504A9657F44E6e0F)
 

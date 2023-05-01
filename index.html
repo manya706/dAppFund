@@ -1,317 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- box icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    <script>
-      //To minimise the height of chatbox
-      $(document).ready(function() {
-          window.addEventListener('dfMessengerLoaded', function (event) {
-          $r1 = document.querySelector("df-messenger");
-          $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
-          $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
-          var sheet = new CSSStyleSheet;
-          // manage box height from here
-          sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 450px }`);
-          $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
-          });
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    //To minimise the height of chatbox
+    $(document).ready(function () {
+      window.addEventListener('dfMessengerLoaded', function (event) {
+        $r1 = document.querySelector("df-messenger");
+        $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+        $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+        var sheet = new CSSStyleSheet;
+        // manage box height from here
+        sheet.replaceSync(`div.chat-wrapper[opened="true"] { height: 450px }`);
+        $r2.shadowRoot.adoptedStyleSheets = [sheet];
       });
+    });
   </script>
-  </head>
-  <!-- added comment -->
-  <body >
-    <!-- header design -->
-    <header class="header">
-      <a href="#" class="logo">dAppFund.</a>
+</head>
+<!-- added comment -->
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">dAppFund.</a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Team</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-    <!-- ADDED COMMENT -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>This is</h3>
-        <h1>dAppFund</h1>
-        <h3>A <span>decentralized</span> investing website</h3>
-        <p>
-          A decentralized investing website that utilizes Web 3 technology and
-          smart contracts to provide a secure and transparent platform for
-          Pre-IPO investment.
-        </p>
-        <div class="social-media">
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/dappfund/" target="_blank"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        </div>
-        <!-- <a href="#" class="btn">Connect Wallet</a> -->
-        <button class="btn" id="connect-button">Investor Login</button>
-        <script>
-          document
-            .getElementById("connect-button")
-            .addEventListener("click", (event) => {
-              window.location.assign("login-signup.html");
-            });
-        </script>
-      </div>
-      <div class="home-img">
-        <img src="images/My project.png" alt="" />
-      </div>
-    </section>
+    <i class="bx bx-menu" id="menu-icon"></i>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <!-- <img class="fimg" src="images/black_blockchain-removebg-preview.png" alt=""> -->
-        <img class="fimg" src="images/ftxx-removebg-2.png" alt="" />
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- ADDED COMMENT -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>This is</h3>
+      <h1>dAppFund</h1>
+      <h3>A <span>decentralized</span> investing website</h3>
+      <p>
+        A decentralized investing website that utilizes Web 3 technology and
+        smart contracts to provide a secure and transparent platform for
+        Pre-IPO investment.
+      </p>
+      <div class="social-media">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com/dappfund/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
       </div>
-      <div class="about-content">
-        <h2 class="heading">Get <span>Funded</span> Through Us!</h2>
-        <h3></h3>
+      <!-- <a href="#" class="btn">Connect Wallet</a> -->
+      <button class="btn" id="connect-button">Investor Login</button>
+      <script>
+        document
+          .getElementById("connect-button")
+          .addEventListener("click", (event) => {
+            window.location.assign("login-signup.html");
+          });
+      </script>
+    </div>
+    <div class="home-img">
+      <img src="images/My project.png" alt="" />
+    </div>
+  </section>
+
+  <!-- about section design -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <!-- <img class="fimg" src="images/black_blockchain-removebg-preview.png" alt=""> -->
+      <img class="fimg" src="images/ftxx-removebg-2.png" alt="" />
+    </div>
+    <div class="about-content">
+      <h2 class="heading">Get <span>Funded</span> Through Us!</h2>
+      <p style="text-align: justify">
+        dAppFund(Decentralized Application Fund) is a decentralized investing
+        website that utilizes Web 3 technology and smart contracts to provide
+        a secure and transparent platform for investing. The website is
+        designed to allow individuals or groups to invest in entrepreneurial
+        ventures, creative projects, and more. Unlike traditional investing
+        platforms, which rely on centralized intermediaries to manage
+        transactions and funds, our platform uses smart contracts to automate
+        the process and ensure transparency, security, and trust.
+      </p>
+      <p style="text-align: justify" id="hidden-text">
+        Basically, smart contracts are self-executing programs that run on a
+        blockchain network, such as Ethereum. They act as a set of rules and
+        conditions that govern the behaviour of the platform, allowing users
+        to interact with each other and with the platform in a decentralized
+        manner. This means that the platform operates without the need for a
+        central authority, reducing the risk of fraud and improving the
+        efficiency of the process. The platform will be built on a
+        decentralized network, meaning that will operates without a central
+        authority or intermediary. Instead, the platform uses smart contracts,
+        which are self-executing computer programs that are stored on a
+        blockchain, to manage and automate the fundraising process. Users who
+        wish to create a campaign on the dAppFund platform would need to
+        register with an Ethereum wallet, which will allow them to create a
+        smart contract that outlines the details of their campaign, including
+        the funding goal, the duration of the campaign, and the terms of the
+        fundraising. Once the smart contract is created, it will be uploaded
+        to the Ethereum network, where it will be visible to potential
+        backers. Backers who wish to support a campaign can view the available
+        campaigns on the dAppFund platform and contribute to them by sending
+        Ethereum to the corresponding smart contract. The smart contract will
+        automatically release the funds to the campaign creator when the
+        funding goal is reached. If the funding goal is not reached within the
+        specified time frame, the smart contract will automatically return the
+        contributed funds to the backers. One of the main advantages of
+        dAppFund is that it provides a transparent and secure fundraising
+        process, as all transactions are recorded on the blockchain, and the
+        smart contracts are designed to operate automatically, without the
+        need for a central authority or intermediary. This reduces the risk of
+        fraud or mismanagement and provides greater accountability and
+        transparency for both campaign creators and backers. Overall, the
+        dAppFund project aims to leverage the power of Web 3 and blockchain
+        technology to provide a decentralized and secure platform for
+        crowdfunding, promoting innovation and collaboration while minimizing
+        the risk of fraud and misuse of funds.
+      </p>
+      <a class="btn" id="read-more-btn" onclick="toggleText()">Read More</a>
+    </div>
+  </section>
+
+  <!-- WHY PRE-SEED INVESTING?   -->
+
+
+  <section class="WhyBlockchain" id="WhyBlockchain">
+    <div>
+      <h3 class="heading">Why</h3>
+      <h1 class="heading">Blockchain</h1>
+      <h3 class="heading">For Pre-Seed Funding</h3>
+      <img class="preimg" src="images/Brainwriting.png" alt="">
+  </section>
+
+
+  <!-- services section design -->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Team</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <img style="width: 20%; border: 2px solid white; border-radius: 50%" src="images/man.png" alt="" />
+        <h3>Anuj Pandey</h3>
         <p style="text-align: justify">
-          dAppFund(Decentralized Application Fund) is a decentralized investing
-          website that utilizes Web 3 technology and smart contracts to provide
-          a secure and transparent platform for investing. The website is
-          designed to allow individuals or groups to invest in entrepreneurial
-          ventures, creative projects, and more. Unlike traditional investing
-          platforms, which rely on centralized intermediaries to manage
-          transactions and funds, our platform uses smart contracts to automate
-          the process and ensure transparency, security, and trust.
+          As a proficient frontend developer, I take pride in my expertise in
+          HTML, CSS, and JavaScript. I have a natural flair for design, and I
+          am committed to creating intuitive, user-friendly web experiences
+          that delight users. As a part of dAppFund, I have played an
+          instrumental role in managing the frontend of our website, ensuring
+          that every aspect of the user experience is seamless, engaging, and
+          visually stunning. I take pride in my ability to create responsive
+          designs that work flawlessly across different platforms and devices.
+          But my passion for frontend development goes beyond just creating
+          beautiful websites. I am also a blockchain enthusiast, and I am
+          actively exploring the intricacies of connecting Metamask wallet to
+          the frontend and building smart contracts. I believe that my ability
+          to blend my frontend skills with blockchain technology sets me apart
+          as a developer who can bring a unique perspective and skillset to
+          any project. I am confident that I will be able to deliver the
+          project.
         </p>
-        <p style="text-align: justify" id="hidden-text">
-          Basically, smart contracts are self-executing programs that run on a
-          blockchain network, such as Ethereum. They act as a set of rules and
-          conditions that govern the behaviour of the platform, allowing users
-          to interact with each other and with the platform in a decentralized
-          manner. This means that the platform operates without the need for a
-          central authority, reducing the risk of fraud and improving the
-          efficiency of the process. The platform will be built on a
-          decentralized network, meaning that will operates without a central
-          authority or intermediary. Instead, the platform uses smart contracts,
-          which are self-executing computer programs that are stored on a
-          blockchain, to manage and automate the fundraising process. Users who
-          wish to create a campaign on the dAppFund platform would need to
-          register with an Ethereum wallet, which will allow them to create a
-          smart contract that outlines the details of their campaign, including
-          the funding goal, the duration of the campaign, and the terms of the
-          fundraising. Once the smart contract is created, it will be uploaded
-          to the Ethereum network, where it will be visible to potential
-          backers. Backers who wish to support a campaign can view the available
-          campaigns on the dAppFund platform and contribute to them by sending
-          Ethereum to the corresponding smart contract. The smart contract will
-          automatically release the funds to the campaign creator when the
-          funding goal is reached. If the funding goal is not reached within the
-          specified time frame, the smart contract will automatically return the
-          contributed funds to the backers. One of the main advantages of
-          dAppFund is that it provides a transparent and secure fundraising
-          process, as all transactions are recorded on the blockchain, and the
-          smart contracts are designed to operate automatically, without the
-          need for a central authority or intermediary. This reduces the risk of
-          fraud or mismanagement and provides greater accountability and
-          transparency for both campaign creators and backers. Overall, the
-          dAppFund project aims to leverage the power of Web 3 and blockchain
-          technology to provide a decentralized and secure platform for
-          crowdfunding, promoting innovation and collaboration while minimizing
-          the risk of fraud and misuse of funds.
+        <!-- <a href="#" class="btn">Read More</a> -->
+      </div>
+
+      <div class="services-box">
+        <img style="width: 20%; border: 2px solid white; border-radius: 50%" src="images/woman.png" alt="" />
+        <h3>Manya Sharma</h3>
+        <p style="text-align: justify">
+          Being a skilled frontend developer, I take immense satisfaction in
+          my competence in HTML, CSS, and JavaScript. My inclination towards
+          creative designing and my unwavering commitment towards crafting
+          user-friendly and intuitive web experiences makes me stand out. I
+          have played a fundamental role in handling the frontend of our
+          website as part of dAppFund, where I ensure that every aspect of the
+          user experience is smoothly executed, engaging, and visually
+          delightful. My forte lies in producing responsive designs that
+          flawlessly function across various platforms and devices. However, I
+          am not content with just building beautiful websites. As an avid
+          blockchain enthusiast, I am exploring exciting opportunities to
+          connect Metamask wallet with the frontend and develop smart
+          contracts. Integrating my frontend skills with blockchain technology
+          gives me a unique perspective and set of skills that sets me apart
+          as a developer, providing me with an edge in any given project.
         </p>
-        <a class="btn" id="read-more-btn" onclick="toggleText()">Read More</a>
+        <!-- <a href="#" class="btn">Read More</a> -->
       </div>
-    </section>
-    <!-- <section class="preseed"> 
-     <div class="preseed">
-        <main class="min-h-screen grid grid-cols-12 container mx-auto px-10 py-14 gap-x-5 place-content-center">
-            <h1 class="col-span-12 lg:col-span-7 font-bold text-3xl md:text-5xl lg:text-6xl self-center leading-3">Your personalized learning journey</h1>
-            <p class="col-span-12 mt-5 lg:mt-0 lg:col-span-5 self-center text-gray-700 text-lg">Smarty gives you the platform and knowledge you need to succeed. One tool could change everything.</p>
-          
-            <article class="col-span-12 grid grid-cols-12 gap-x-5 md:mt-16 xl:mt-10 2xl:mt-5 items-center">
-              <div class="order-2 md:order-1 col-span-12 lg:col-span-7 grid sm:grid-cols-2 gap-7 lg:gap-x-0 md:gap-y-16">
-                <div class="lg:max-w-[80%]">
-                  <p class="number flex items-end text-5xl font-bold">1<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 mb-1"></span></p>
-          
-                  <h2 class="text-xl lg:text-2xl font-bold my-4">Start your account</h2>
-                  <p class="text-gray-700 text-lg">You get a 2-week free trial to kick the Smarty tires. We want you to get the full experience.</p>
-                </div>
-                <div class="lg:max-w-[80%]">
-                  <p class="number flex items-end text-5xl font-bold">2<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 mb-1"></span></p>
-          
-                  <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-3">Learn to learn</h2>
-                  <p class="text-gray-700 text-lg">We give you a free course that guides you through the process of learning.</p>
-                </div>
-                <div class="lg:max-w-[80%]">
-                  <p class=" number flex items-end text-5xl font-bold">3<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 "></span></p>
-          
-                  <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-3">Use learning materials</h2>
-                  <p class="text-gray-700 text-lg">Use our multimedia lectures, videos, and coaching sessions. Unlimited everything!</p>
-                </div>
-                <div class="lg:max-w-[80%]">
-                  <p class="number flex items-end text-5xl font-bold">4<span class="inline-block bg-red-400 h-1.5 rounded-full w-1.5 -mb-1"></span></p>
-          
-                  <h2 class="text-xl lg:text-2xl font-bold mt-4 mb-3">Create a success story</h2>
-                  <p class="text-gray-700 text-lg">With access to online learning resources anyone can transform their lives in meaningful ways.</p>
-                </div>
-              </div>
-              <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="max-w-full aspect-[3/2] lg:aspect-square object-cover col-span-12 my-10 md:mb-0 md:mt-14 lg:my-0 lg:col-span-5 rounded-xl shadow-lg lg:h-full order-1">
-            </article>
-          
-          </main>
-    </section> -->
-    <!-- </div> -->
+    </div>
+  </section>
+  <!-- contacts section design -->
 
-    <!-- services section design -->
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Team</span></h2>
-      <div class="services-container">
-        <div class="services-box">
-          <img
-            style="width: 20%; border: 2px solid white; border-radius: 50%"
-            src="images/man.png"
-            alt=""
-          />
-          <h3>Anuj Pandey</h3>
-          <p style="text-align: justify">
-            As a proficient frontend developer, I take pride in my expertise in
-            HTML, CSS, and JavaScript. I have a natural flair for design, and I
-            am committed to creating intuitive, user-friendly web experiences
-            that delight users. As a part of dAppFund, I have played an
-            instrumental role in managing the frontend of our website, ensuring
-            that every aspect of the user experience is seamless, engaging, and
-            visually stunning. I take pride in my ability to create responsive
-            designs that work flawlessly across different platforms and devices.
-            But my passion for frontend development goes beyond just creating
-            beautiful websites. I am also a blockchain enthusiast, and I am
-            actively exploring the intricacies of connecting Metamask wallet to
-            the frontend and building smart contracts. I believe that my ability
-            to blend my frontend skills with blockchain technology sets me apart
-            as a developer who can bring a unique perspective and skillset to
-            any project. I am confident that I will be able to deliver the
-            project.
-          </p>
-          <!-- <a href="#" class="btn">Read More</a> -->
-        </div>
-
-        <div class="services-box">
-          <img
-            style="width: 20%; border: 2px solid white; border-radius: 50%"
-            src="images/woman.png"
-            alt=""
-          />
-          <h3>Manya Sharma</h3>
-          <p style="text-align: justify">
-            Being a skilled frontend developer, I take immense satisfaction in
-            my competence in HTML, CSS, and JavaScript. My inclination towards
-            creative designing and my unwavering commitment towards crafting
-            user-friendly and intuitive web experiences makes me stand out. I
-            have played a fundamental role in handling the frontend of our
-            website as part of dAppFund, where I ensure that every aspect of the
-            user experience is smoothly executed, engaging, and visually
-            delightful. My forte lies in producing responsive designs that
-            flawlessly function across various platforms and devices. However, I
-            am not content with just building beautiful websites. As an avid
-            blockchain enthusiast, I am exploring exciting opportunities to
-            connect Metamask wallet with the frontend and develop smart
-            contracts. Integrating my frontend skills with blockchain technology
-            gives me a unique perspective and set of skills that sets me apart
-            as a developer, providing me with an edge in any given project.
-          </p>
-          <!-- <a href="#" class="btn">Read More</a> -->
-        </div>
+  <section class="contact" id="contact">
+    <h2 class="heading">Startup Pitch Deck <span>Submission</span></h2>
+    <form action="mailto:pandeyanuj1804@gmail.com" method="post" enctype="text/plain">
+      <div class="input-box">
+        <input type="text" id="name" name="name" placeholder="Startup Name" />
+        <input type="email" id="email" name="email" placeholder="Vaild Email Adress" />
       </div>
-    </section>
-    <!-- contacts section design -->
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Startup Pitch Deck <span>Submission</span></h2>
-      <form
-        action="mailto:pandeyanuj1804@gmail.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <div class="input-box">
-          <input type="text" id="name" name="name" placeholder="Full Name" />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            id="mob"
-            name="mob"
-            placeholder="Mobile Number"
-          />
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Email Subject"
-          />
-        </div>
-        <textarea
-          id="message"
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
-
-    <!-- footer design -->
-
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2023 Team dAppFund | All Rights Reserved.</p>
+      <div class="input-box">
+        <input type="number" id="mob" name="mob" placeholder="Contact Number" />
+        <input type="text" id="subject" name="subject" placeholder="Your are based in ?" />
       </div>
-
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      <div class="input-box">
+        <input type="text" id="name" name="name" placeholder="Domain Of Your Startup" />
+        <input type="number" id="mob" name="mob" placeholder="Number Of Employeesr" />
       </div>
-    </footer>
+      <textarea id="message" name="message" cols="30" rows="10" placeholder="Explain Your Startup"></textarea>
+      <input type="submit" value="Submit More Info" class="btn" />
+    </form>
+  </section>
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-      intent="WELCOME"
-      chat-title="dAppFund"
-      agent-id="fb499369-df14-40d7-8867-8f9a51098cea"
-      language-code="en"
-    ></df-messenger>
+  <!-- footer design -->
 
-    <style>
-      df-messenger {
-        --df-messenger-bot-message: rgb(94, 111, 112);
-        --df-messenger-button-titlebar-color:  rgb(48, 188, 198);
-        --df-messenger-chat-background-color: #b7e1da;
-        --df-messenger-font-color: white;
-        --df-messenger-send-icon: #3d3f43;
-        --df-messenger-user-message: rgb(32, 221, 235);
-      }
-    </style>
-  </body>
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 Team dAppFund | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="dAppFund" agent-id="fb499369-df14-40d7-8867-8f9a51098cea"
+    language-code="en"></df-messenger>
+
+  <style>
+    df-messenger {
+      --df-messenger-bot-message: rgb(35, 183, 194);
+      --df-messenger-button-titlebar-color: rgb(48, 188, 198);
+      --df-messenger-chat-background-color: #f4f8f7;
+      --df-messenger-font-color: white;
+      --df-messenger-send-icon: #111215;
+      --df-messenger-user-message: rgb(32, 221, 235);
+    }
+  </style>
+</body>
+
 </html>

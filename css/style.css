@@ -369,6 +369,35 @@ span {
   color: var(--second-bg-color);
 }
 
+
+
+
+/* WHY BLOCKHAIN SECTION */
+
+
+.WhyBlockchain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: rgb(48, 46, 46);
+  background: black;
+  padding: 1rem 9% 2rem;
+}
+
+.preimg{
+  width: 120%;
+  margin-top: 4rem;
+  margin-left: -105px;
+}
+
+.WhyBlockchain h1 {
+  color: var(--main-color);
+  /* line-height: 1.2; */
+}
+
+
+
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
   html {
@@ -446,6 +475,12 @@ span {
   .services h2 {
     margin-bottom: 3rem;
   }
+
+  .preimg{
+    width: 120%;
+    margin-top: 4rem;
+    margin-left: -5.5rem;
+  }
 }
 
 
@@ -476,14 +511,3 @@ span {
 .popup.show {
   opacity: 1;
 }
-
-/* STUPID PRE-SEED INFO */
-
-.preseed { 
-  background: #fff8f2;
-  background: -webkit-linear-gradient(to right, #fff8f2, #fddbce);
-  background: linear-gradient(to right, #fff8f2, #fddbce);
-}
-
-
-

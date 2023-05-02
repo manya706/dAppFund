@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="company-info.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">dAppFund.</a>
+    
+        <i class="bx bx-menu" id="menu-icon"></i>
+    
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <!-- <a href="#about">Back to Main page</a> -->
+          <a href="#services">Contact</a>
+          <a href="dashboard.html">Back to Dashboard</a>
+        </nav>
+      </header>
+      <section class="home">
+        <div class="img-pabio">
+            <img src="images\pabio-profile (1).jpg">
+            <p>Pabio</p>
+            <div class="home-content">
+                <p>Pabio offers high-quality furniture rental for Europe. With our 
+                    asset-light rent-to-own business model, customers can get $20k of 
+                    new furniture with $0 upfront and monthly payments for up to 
+                    4 years. <br>
+                    <br>
+                    Company <span>Valuation</span> : $100,000
+                    <br>
+
+                Get <span>latest</span> info at <a href="https://www.crunchbase.com/organization/pabio" target="_blank">Crunchbase</a>
+                </p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="financial">
+                <p>Sales in <span>financial</span> year 2022</p>
+                <canvas id="sales-chart" width="200" height="200"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <div class="financial">
+                <p>Net<span> Profit</span> in year 2022</p>
+                <canvas id="profit-chart"></canvas>
+            </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2023 Team dAppFund | All Rights Reserved.</p>
+        </div>
+    
+        <div class="footer-iconTop">
+          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </footer>
+</body>
+<script src="company-info.js"></script>
+</html>

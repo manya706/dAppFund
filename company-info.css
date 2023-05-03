@@ -119,8 +119,8 @@ section {
   margin-top: 70px;
   display: inline-block;
   margin-right: 50px;
-  box-shadow: 0 14px 28px rgba(54, 187, 232, 0.15),
-    0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(54, 187, 232, 0.10),
+    0 10px 10px rgba(0, 0, 0, 0.10);
 }
 .card p {
   font-size: 25px;
@@ -176,4 +176,34 @@ section {
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: var(--bg-color);
+}
+.card2 {
+  position: relative;
+  width: 1050px;
+  margin-bottom: 50px;
+  height: 200px;
+  background-color: var(--second-bg-color);
+  border-radius: 8px;
+  margin-top: 70px;
+  display: inline-block;
+  margin-right: 50px;
+  box-shadow: 0 14px 28px rgba(54, 187, 232, 0.10),
+    0 10px 10px rgba(0, 0, 0, 0.10);
+}
+.card2 p {
+  margin-top: 10px;
+  margin-left: 25px;
+  /* text-align: justify; */
+}
+.card2 span {
+  color: var(--main-color);
+}
+.txtceo{
+  font-size: 1.3rem !important;
+}
+.ceo{
+  font-size: 2rem !important;
+}
+.heading2{
+  font-size: 2.5rem;
 }

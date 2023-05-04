@@ -1,91 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="company-enquiry.css" />
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo">dAppFund.</a>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="company-enquiry.css" />
+</head>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <!-- <a href="#about">Back to Main page</a> -->
-        <a href="#services">Contact Sales</a>
-        <a href="index.html">Back to Main Page</a>
-      </nav>
-    </header>
-    <section class="contact">
-      <h2 class="heading">Startup Pitch Deck <span>Submission</span></h2>
-      <form
-        action="mailto:pandeyanuj1804@gmail.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <div class="input-box">
-          <input type="text" id="name" name="name" placeholder="Startup Name" />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Vaild Email Adress"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            id="mob"
-            name="mob"
-            placeholder="Contact Number"
-          />
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Your are based in ?"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Domain Of Your Startup"
-          />
-          <input
-            type="number"
-            id="mob"
-            name="mob"
-            placeholder="Number Of Employees"
-          />
-        </div>
-        <textarea
-          id="message"
-          name="message"
-          cols="30"
-          rows="5"
-          placeholder="Explain Your Startup"
-        ></textarea>
-        <div class="input-box"> 
-            <h3>Quaterly <span> Financial </span> Year Sales :  </h3>
-            <input type="text" id="q1" name="Quater1" placeholder="Quater 1">
-            <input type="text" id="q2" name="Quater2" placeholder="Quater 2">
-            <input type="text" id="q3" name="Quater3" placeholder="Quater 3">
-            <input type="text" id="q4" name="Quater4" placeholder="Quater 4">
-        </div>
-        <div class="input-box">
-            <label for="file-upload"><h4>Financial <span>Statement</span> :</h4></label>
-            <input type="file" id="file-upload">
-        </div>
-          
-        <input type="submit" value="Submit" class="btn" />
-        <h5>Our team will contact you shortly.</h5>
-      </form>
-    </section>
-  </body>
+<body>
+  <header class="header">
+    <a href="#" class="logo">dAppFund.</a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <!-- <a href="#about">Back to Main page</a> -->
+      <a href="#services">Contact Sales</a>
+      <a href="index.html">Back to Main Page</a>
+    </nav>
+  </header>
+  <section class="contact">
+    <h2 class="heading">Startup Pitch Deck <span>Submission</span></h2>
+    <form action="http://localhost/dappuu/insert.php" method="post" enctype="multipart/form-data">
+      <div class="input-box">
+        <input type="text" id="compname" name="compname" placeholder="Startup Name" />
+        <input type="compemail" id="compemail" name="email" placeholder="Vaild Email Adress" />
+      </div>
+      <div class="input-box">
+        <input type="number" id="mob" name="mob" placeholder="Contact Number" />
+        <input type="text" id="subject" name="subject" placeholder="Your are based in ?" />
+      </div>
+      <div class="input-box">
+        <input type="text" id="domain" name="domain" placeholder="Domain Of Your Startup" />
+        <input type="number" id="temployee" name="temployee" placeholder="Number Of Employees" />
+      </div>
+      <textarea id="message" name="message" cols="30" rows="5" placeholder="Explain Your Startup"></textarea>
+      <div class="input-box">
+        <h3>Quaterly <span> Financial </span> Year Sales : </h3>
+        <input type="text" id="q1" name="q1" placeholder="Quater 1">
+        <input type="text" id="q2" name="q2" placeholder="Quater 2">
+        <input type="text" id="q3" name="q3" placeholder="Quater 3">
+        <input type="text" id="q4" name="q4" placeholder="Quater 4">
+      </div>
+      <div class="input-box">
+        <label for="file-upload">
+          <h4>Financial <span>Statement</span> :</h4>
+        </label>
+        <input type="file" id="fileupload" class="fileupload">
+      </div>
+
+      <input type="submit" value="Submit" class="btn" />
+      <h5>Our team will contact you shortly.</h5>
+    </form>
+  </section>
+</body>
+
 </html>

@@ -296,11 +296,6 @@ span {
 
 .contact h2 {
   margin-bottom: 3rem;
-  font-size: 2.2rem;
-}
-.contact h1 {
-  margin-bottom: 3rem;
-  font-size: 4.2rem;
 }
 .contact form {
   max-width: 70rem;
@@ -518,12 +513,27 @@ span {
 } */
 
 
+.whyreg{
+  padding: 3rem 14% 6rem;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  gap: 2rem;
+  /* background: rgb(48, 46, 46);
+  background: black;
+  padding: 1rem 9% 2rem; */
+}
+
+
 #earth {
-  width: 1000px;
-  height: 1000px;
+  width: 400px;
+  height: 400px;
+  margin: 35px auto 0;
   border-radius: 50%;
-  box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
-    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+  /* box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2); */
+    box-shadow: inset 16px 10px 40px 50px rgb(255, 255, 255) ;
   animation-name: rotate;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -542,7 +552,13 @@ span {
     background-position-x: 220px;
   }
 } */
-/* .img5{
+.img5{
+  padding: 10px;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
-  width: 20%;
-} */
+  /* width: 100%; */
+  box-shadow: inset 16px 0 40px 3px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+}

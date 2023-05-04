@@ -112,8 +112,9 @@ section {
 }
 .card {
   position: relative;
-  width: 550px;
-  height: 450px;
+  width: 450px;
+  height: 350px;
+  margin-left: 50px;
   background-color: var(--second-bg-color);
   border-radius: 8px;
   margin-top: 70px;
@@ -134,7 +135,7 @@ section {
   width: 100%;
   max-width: 310px;
   height: 100%;
-  max-height: 310px;
+  max-height: 260px;
   margin-left: 80px;
   margin-top: 10px;
 }
@@ -179,13 +180,14 @@ section {
 }
 .card2 {
   position: relative;
-  width: 1155px;
+  width: 990px;
   margin-bottom: 50px;
   height: 240px;
   background-color: var(--second-bg-color);
   border-radius: 8px;
   margin-top: 70px;
   display: inline-block;
+  margin-left: 60px;
   margin-right: 50px;
   box-shadow: 0 14px 28px rgba(54, 187, 232, 0.1),
     0 10px 10px rgba(0, 0, 0, 0.1);

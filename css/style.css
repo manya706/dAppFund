@@ -487,7 +487,6 @@ span {
   color: white;
   padding: 10px 20px;
   border: 0.1rem solid #0ef;
-  /* box-shadow: #0ef; */
   border-radius: 3px;
   z-index: 999;
   width: 30rem;
@@ -508,10 +507,12 @@ span {
 
 .whyreg h2{
   margin-bottom: 40px;
+  font-size: 4rem;
 }
 
 .whyreg h1{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 4rem;
 }
 
 

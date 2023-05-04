@@ -112,15 +112,15 @@ section {
 }
 .card {
   position: relative;
-  width: 500px;
-  height: 400px;
+  width: 550px;
+  height: 450px;
   background-color: var(--second-bg-color);
   border-radius: 8px;
   margin-top: 70px;
   display: inline-block;
   margin-right: 50px;
-  box-shadow: 0 14px 28px rgba(54, 187, 232, 0.10),
-    0 10px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 14px 28px rgba(54, 187, 232, 0.1),
+    0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .card p {
   font-size: 25px;
@@ -179,16 +179,16 @@ section {
 }
 .card2 {
   position: relative;
-  width: 1050px;
+  width: 1155px;
   margin-bottom: 50px;
-  height: 200px;
+  height: 240px;
   background-color: var(--second-bg-color);
   border-radius: 8px;
   margin-top: 70px;
   display: inline-block;
   margin-right: 50px;
-  box-shadow: 0 14px 28px rgba(54, 187, 232, 0.10),
-    0 10px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 14px 28px rgba(54, 187, 232, 0.1),
+    0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .card2 p {
   margin-top: 10px;
@@ -198,12 +198,30 @@ section {
 .card2 span {
   color: var(--main-color);
 }
-.txtceo{
-  font-size: 1.3rem !important;
+.txtceo {
+  font-size: 1.5rem !important;
 }
-.ceo{
-  font-size: 2rem !important;
+.ceo {
+  font-size: 2.4rem !important;
 }
-.heading2{
+.heading2 {
   font-size: 2.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  /* color: var(--second-bg-color); */
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-left: 4rem;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+  cursor: pointer;
 }

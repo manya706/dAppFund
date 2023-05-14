@@ -500,21 +500,19 @@ span {
   opacity: 1;
 }
 
-
-.whyreg{
+.whyreg {
   padding: 3rem 14% 6rem;
 }
 
-.whyreg h2{
+.whyreg h2 {
   margin-bottom: 40px;
   font-size: 4rem;
 }
 
-.whyreg h1{
+.whyreg h1 {
   margin-bottom: 30px;
   font-size: 4rem;
 }
-
 
 #earth {
   width: 400px;
@@ -526,7 +524,7 @@ span {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.img5{
+.img5 {
   padding: 10px;
   border-radius: 50%;
   width: 400px;

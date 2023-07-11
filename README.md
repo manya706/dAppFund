@@ -121,10 +121,10 @@ Conclusion:
 - [@Anuj Kumar Pandey](https://github.com/codermal7)
 
 ## Resources 
-https://towardsdatascience.com/applied-machine-learning-models-for-improved-startup-valuation-a7b180fee127
-https://www.turing.com/kb/synthetic-data-generation-techniques
-https://docs.investory.io/en/articles/6172037-investor-s-api-beta
-https://www.investopedia.com/articles/financial-theory/11/valuing-startup-ventures.asp#:~:text=Discounted%20Cash%20Flow%20(DCF)&text=Discounted%20cash%20flow%20analysis%20then,that%20cash%20flow%20is%20worth.
+- https://towardsdatascience.com/applied-machine-learning-models-for-improved-startup-valuation-a7b180fee127
+- https://www.turing.com/kb/synthetic-data-generation-techniques
+- https://docs.investory.io/en/articles/6172037-investor-s-api-beta
+- https://www.investopedia.com/articles/financial-theory/11/valuing-startup-ventures.asp#:~:text=Discounted%20Cash%20Flow%20(DCF)&text=Discounted%20cash%20flow%20analysis%20then,that%20cash%20flow%20is%20worth.
 
 <img src="images/frontpage1.png">
 <img src="images/frontpage2.png">
